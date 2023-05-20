@@ -1,11 +1,11 @@
 <template>
-  <div class="grid grid-cols-1 px-4 md:px-[500px]">
+  <div class="grid grid-cols-1 px-4 md:px-[300px]">
     <div class="text-center mb-10">
       <h1 class="text-[40px] text-primarybuu font-medium uppercase pb-2">
         งานวิจัยพร้อมใช้
       </h1>
     </div>
-    <div class="grid grid-cols-2 gap-x-12 gap-y-10 justify-items-center mb-10">
+    <div class="grid grid-cols-2 gap-x-5 gap-y-10 justify-items-start mb-10">
       <a
         v-for="item in dataLinkBox"
         :key="item.id"
@@ -13,9 +13,9 @@
         class="pb-2"
         target="_blank"
       >
-        <div class="text-start text-neutralbuu px-12">
-          <h2 v-if="item.id == 4" class="text-xl font-bold capitalize pb-2">
-            {{ item.name }}<br />สีเขียว จังหวัดจันทบุรี
+        <div class="text-start text-neutralbuu px-6">
+          <h2 v-if="item.id == 4" class="text-xl text-start font-bold capitalize pb-2">
+            {{ item.name }}สีเขียว จังหวัดจันทบุรี
           </h2>
           <h2 v-else class="text-xl font-bold capitalize pb-2">{{ item.name }}</h2>
           <p class="text-lg text-start line-clamp-2">
